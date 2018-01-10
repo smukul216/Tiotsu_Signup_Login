@@ -1,0 +1,23 @@
+{
+  "name": "loginsignuptest",
+  "version": "1.0.0",
+  "description": "kuchh v ni",
+  "main": "config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smukul216/Tiotsu_Signup_Login.git"
+  },
+  "author": "mukul",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/smukul216/Tiotsu_Signup_Login/issues"
+  },
+  "homepage": "https://github.com/smukul216/Tiotsu_Signup_Login#readme",
+  "dependencies": {
+    "express": "^4.16.2",
+    "mysql": "^2.15.0"
+  }
+}
