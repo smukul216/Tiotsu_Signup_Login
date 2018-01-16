@@ -3,12 +3,29 @@ var app=express()
 var connection=require('config.js');
 var register=function(req,res){
 var users={
- "name":req.name,
-        "password":req.password,
-		"email":req.email
+ "name":req.body.name,
+        "password":req.body.password,
+		"email":req.body.email
       
     }
 app.get('/api/register',register.users);}
+
+
+var authenticate=function(req,res){
+    var email=req.email;
+var password=req.password;
+			app.get('/api/authenticate',authenticate);}
+			
+	
+
+
+
+
+
+
+
+
+
 
 
 			
@@ -33,3 +50,28 @@ app.get('/api/register',register.users);}
             console.log('User succesfully registered');
 					   console.log(result[]);
    }
+   
+   		
+			//Authenticate the user
+	var call_3=	CALL select_data(email,password);
+		 connection.query(call_3,function(err,result){
+			  if (error) {
+            console.log('email/password do not match');
+            
+      }else{
+        if(results.length >0){
+            if(password==results[0].password)
+		console.log('successfully authenticated');}
+	  }
+   
+		 }
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
